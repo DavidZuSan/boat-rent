@@ -1,0 +1,7 @@
+{
+  "boats": [
+    { "id": 1, "name": "Barco 1", "description": "Descripción del Barco 1" },
+    { "id": 2, "name": "Barco 2", "description": "Descripción del Barco 2" },
+    { "id": 3, "name": "Barco 3", "description": "Descripción del Barco 3" }
+  ]
+}
