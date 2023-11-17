@@ -1,0 +1,22 @@
+.offcanvas {
+  max-width: 50%;
+}
+
+@media (max-width: 768px) {
+  .offcanvas {
+    max-width: 75%;
+  }
+}
+
+.navbar-brand img {
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0;
+  background-color: transparent;
+  display: block;
+}
+
+.dropdown-menu {
+  border: none;
+  background-color: transparent;
+}

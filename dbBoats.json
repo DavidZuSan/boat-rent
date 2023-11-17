@@ -1,6 +1,13 @@
 {
   "boats": [
-    { "id": 1, "name": "Barco 1", "description": "Descripción del Barco 1" },
+    {
+      "id": 1,
+      "name": "Barco 1",
+      "year": 2013,
+      "price": 130,
+      "image": "/images/boats/sailboat_01.png",
+      "description": "Descripción del Barco 1"
+    },
     { "id": 2, "name": "Barco 2", "description": "Descripción del Barco 2" },
     { "id": 3, "name": "Barco 3", "description": "Descripción del Barco 3" }
   ]
