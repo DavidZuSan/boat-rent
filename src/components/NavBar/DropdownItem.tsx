@@ -9,7 +9,7 @@ interface DropdownItemProps {
 const DropdownItem: React.FC<DropdownItemProps> = ({ title, items }) => (
   <li className="nav-item dropdown">
     <button
-      className="nav-link dropdown-toggle"
+      className="nav-link dropdown-toggle text-white"
       id={`${title.toLowerCase()}Dropdown`}
       type="button"
       data-bs-toggle="dropdown"
@@ -23,7 +23,7 @@ const DropdownItem: React.FC<DropdownItemProps> = ({ title, items }) => (
     >
       {items.map((item) => (
         <li key={item.name}>
-          <Link className="dropdown-item" to={item.path}>
+          <Link className="dropdown-item text-white" to={item.path}>
             {item.name}
           </Link>
         </li>

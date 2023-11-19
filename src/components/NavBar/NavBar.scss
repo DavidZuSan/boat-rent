@@ -1,10 +1,14 @@
 .offcanvas {
   max-width: 50%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(12, 36, 56, 0.2);
 }
 
 @media (max-width: 768px) {
   .offcanvas {
-    max-width: 75%;
+    max-width: 60%;
   }
 }
 
@@ -19,4 +23,21 @@
 .dropdown-menu {
   border: none;
   background-color: transparent;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #000;
+}
+
+.btn-close-custom {
+  background: none;
+  border: none;
+  outline: none;
+  color: azure;
+  font-size: 34px;
+
+  &:focus {
+    box-shadow: none;
+  }
 }

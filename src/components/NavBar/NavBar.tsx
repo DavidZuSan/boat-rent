@@ -17,7 +17,7 @@ const NavBar: React.FC = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <Link className="navbar-brand" to="/">
+        <Link className="navbar-brand text-white" to="/">
           <img src="/images/logo.webp" alt="Logo" width="40" height="34" />
         </Link>
         <div
@@ -27,15 +27,20 @@ const NavBar: React.FC = () => {
           aria-labelledby="offcanvasNavbarLabel"
         >
           <div className="offcanvas-header">
-            <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
+            <h5
+              className="offcanvas-title text-white"
+              id="offcanvasNavbarLabel"
+            >
               Menu
             </h5>
             <button
               type="button"
-              className="btn-close"
+              className="btn-close-custom"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
-            ></button>
+            >
+              <i className="bi bi-x-square-fill"></i>
+            </button>
           </div>
           <div className="offcanvas-body">
             <ul className="navbar-nav">
@@ -57,13 +62,13 @@ const NavBar: React.FC = () => {
                 ]}
               />
               <li className="nav-item">
-                <Link className="nav-link" to="/about">
-                  Quiénes Somos
+                <Link className="nav-link text-white" to="/about">
+                  About us
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/contact">
-                  Contacto
+                <Link className="nav-link text-white" to="/contact">
+                  Contact us
                 </Link>
               </li>
             </ul>

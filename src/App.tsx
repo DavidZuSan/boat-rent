@@ -5,6 +5,9 @@ import BoatList from "./components/BoatList";
 import BoatDetails from "./components/BoatDetails";
 import NavBar from "./components/NavBar/NavBar";
 
+import "./styles/global.scss";
+import "bootstrap-icons/font/bootstrap-icons.css";
+
 function App() {
   return (
     <Router>
