@@ -1,9 +1,14 @@
+.bg-body-tertiary {
+  background-color: transparent !important;
+}
+
 .offcanvas {
   max-width: 50%;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   backdrop-filter: blur(10px);
   background-color: rgba(12, 36, 56, 0.2);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
 }
 
 @media (max-width: 768px) {
@@ -12,22 +17,10 @@
   }
 }
 
-.navbar-brand img {
-  border: none;
-  border-radius: 0.25rem;
-  padding: 0;
-  background-color: transparent;
-  display: block;
-}
-
-.dropdown-menu {
-  border: none;
-  background-color: transparent;
-}
-
-.dropdown-item:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-  color: #000;
+.navbar-toggler i.fas,
+.navbar-brand i.bi {
+  color: azure;
+  font-size: 38px;
 }
 
 .btn-close-custom {
@@ -40,4 +33,14 @@
   &:focus {
     box-shadow: none;
   }
+}
+
+.dropdown-menu {
+  border: none;
+  background-color: transparent;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #000;
 }

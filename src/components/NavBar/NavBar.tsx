@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import DropdownItem from "./DropdownItem";
 
 import "./NavBar.scss";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const NavBar: React.FC = () => {
   return (
@@ -15,10 +16,10 @@ const NavBar: React.FC = () => {
           data-bs-target="#offcanvasNavbar"
           aria-controls="offcanvasNavbar"
         >
-          <span className="navbar-toggler-icon"></span>
+          <i className="fas fa-bars"></i>
         </button>
         <Link className="navbar-brand text-white" to="/">
-          <img src="/images/logo.webp" alt="Logo" width="40" height="34" />
+          <i className="bi bi-person-circle"></i>
         </Link>
         <div
           className="offcanvas offcanvas-start"
