@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import DropdownItem from "./DropdownItem";
-
 import "./NavBar.scss";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const NavBar: React.FC = () => {
+  const [isSearchVisible, setSearchVisible] = useState(false);
+
   return (
     <nav className="navbar bg-body-tertiary fixed-top">
       <div className="container-fluid">
@@ -18,9 +19,27 @@ const NavBar: React.FC = () => {
         >
           <i className="fas fa-bars"></i>
         </button>
-        <Link className="navbar-brand text-white" to="/">
-          <i className="bi bi-person-circle"></i>
-        </Link>
+
+        <div className="search-container ms-auto">
+          <Link className="navbar-brand text-white" to="/">
+            <i className="bi bi-person-circle"></i>
+          </Link>
+          <button
+            onClick={() => setSearchVisible(!isSearchVisible)}
+            className="search-button"
+          >
+            <i className="fas fa-search"></i>
+          </button>
+          {isSearchVisible && (
+            <input
+              type="text"
+              className="search-bar active"
+              placeholder="Search..."
+              autoFocus
+            />
+          )}
+        </div>
+
         <div
           className="offcanvas offcanvas-start"
           tabIndex={-1}

@@ -20,7 +20,20 @@
 .navbar-toggler i.fas,
 .navbar-brand i.bi {
   color: azure;
+}
+
+.navbar-toggler i.fas {
   font-size: 38px;
+  padding-right: 15px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  i.bi {
+    font-size: 38px;
+  }
 }
 
 .btn-close-custom {
@@ -43,4 +56,65 @@
 .dropdown-item:hover {
   background-color: rgba(255, 255, 255, 0.3);
   color: #000;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+.search-button {
+  background: none;
+  border: none;
+  color: azure;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10;
+  margin-left: 10px;
+}
+
+.search-bar {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 100%;
+  padding: 5px;
+  transition: all 0.3s ease-in-out;
+  max-width: 80vw;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+}
+
+.search-bar.active {
+  display: block;
+  width: calc(100% - 120px);
+  right: 110px;
+  visibility: visible;
+  opacity: 1;
+}
+
+.search-button.active + .search-bar,
+.search-bar:focus {
+  display: block;
+}
+
+.search-button {
+  order: 2;
+  z-index: 10;
+}
+
+.navbar-brand {
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  order: 3;
+  i.bi {
+    font-size: 38px;
+    color: azure;
+  }
 }
