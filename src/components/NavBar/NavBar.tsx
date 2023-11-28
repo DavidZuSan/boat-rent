@@ -4,8 +4,25 @@ import DropdownItem from "./DropdownItem";
 import "./NavBar.scss";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
-const NavBar: React.FC = () => {
-  const [isSearchVisible, setSearchVisible] = useState(false);
+interface NavBarProps {
+  onSearch: (searchTerm: string) => void;
+}
+
+const NavBar: React.FC<NavBarProps> = ({ onSearch }) => {
+  const [isSearchVisible, setSearchVisible] = useState<boolean>(false);
+  const [searchTerm, setSearchTerm] = useState<string>("");
+
+  const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchTerm(event.target.value);
+  };
+
+  const handleSearchKeyDown = (
+    event: React.KeyboardEvent<HTMLInputElement>
+  ) => {
+    if (event.key === "Enter") {
+      onSearch(searchTerm);
+    }
+  };
 
   return (
     <nav className="navbar bg-body-tertiary fixed-top">
@@ -35,6 +52,9 @@ const NavBar: React.FC = () => {
               type="text"
               className="search-bar active"
               placeholder="Search..."
+              value={searchTerm}
+              onChange={handleSearchChange}
+              onKeyDown={handleSearchKeyDown}
               autoFocus
             />
           )}
