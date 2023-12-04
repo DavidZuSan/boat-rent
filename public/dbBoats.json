@@ -2,24 +2,29 @@
   "boats": [
     {
       "id": 1,
-      "name": "Barco 1",
+      "name": "Serendipity",
+      "type": "sailboat",
       "year": 2013,
       "price": 130,
       "image": "/images/boats/sailboat_01.png",
-      "description": "Descripción del Barco 1"
+      "description": "Aliquip dolore nulla anim ut aliquip esse nisi reprehenderit reprehenderit velit nostrud consectetur duis."
     },
     {
       "id": 2,
-      "name": "Barco 2",
+      "name": "Liberty",
+      "type": "motor",
       "year": 2013,
       "price": 80,
+      "image": "/images/boats/yacht_02.png",
       "description": "Descripción del Barco 2"
     },
     {
       "id": 3,
-      "name": "Barco 3",
+      "name": "Amazonite",
+      "type": "motor",
       "year": 2020,
       "price": 200,
+      "image": "/images/boats/yacht_01.png",
       "description": "Descripción del Barco 3"
     }
   ]

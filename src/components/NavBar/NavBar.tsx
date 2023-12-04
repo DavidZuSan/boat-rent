@@ -9,7 +9,6 @@ interface NavBarProps {
 }
 
 const NavBar: React.FC<NavBarProps> = ({ onSearch }) => {
-  const [isSearchVisible, setSearchVisible] = useState<boolean>(false);
   const [searchTerm, setSearchTerm] = useState<string>("");
 
   const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -38,26 +37,19 @@ const NavBar: React.FC<NavBarProps> = ({ onSearch }) => {
         </button>
 
         <div className="search-container ms-auto">
+          <i className="bi bi-search search-icon"></i>
+          <input
+            type="text"
+            className="search-bar"
+            placeholder="Search..."
+            value={searchTerm}
+            onChange={handleSearchChange}
+            onKeyDown={handleSearchKeyDown}
+            autoFocus
+          />
           <Link className="navbar-brand text-white" to="/">
             <i className="bi bi-person-circle"></i>
           </Link>
-          <button
-            onClick={() => setSearchVisible(!isSearchVisible)}
-            className="search-button"
-          >
-            <i className="fas fa-search"></i>
-          </button>
-          {isSearchVisible && (
-            <input
-              type="text"
-              className="search-bar active"
-              placeholder="Search..."
-              value={searchTerm}
-              onChange={handleSearchChange}
-              onKeyDown={handleSearchKeyDown}
-              autoFocus
-            />
-          )}
         </div>
 
         <div

@@ -27,13 +27,18 @@ const Home: React.FC<HomeProps> = ({ searchTerm, onSearchTermChange }) => {
 
   return (
     <div>
-      <h1>Lista de Barcos</h1>
       <ul>
         {filteredBoats.map((boat) => (
           <li key={boat.id}>
+            <img
+              src={boat.image}
+              alt={`Imagen del ${boat.name}`}
+              style={{ width: "100%" }}
+            />
             <strong>{boat.name}</strong>: {boat.description}
-            <div>Año: {boat.year}</div>
-            <div>Precio: {boat.price}</div>
+            <div>Type: {boat.type}</div>
+            <div>Year: {boat.year}</div>
+            <div>Price: {boat.price}</div>
           </li>
         ))}
       </ul>
