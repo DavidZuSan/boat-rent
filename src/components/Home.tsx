@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import BoatCard from "./BoatCard/BoatCard";
 import { Boat } from "./types/Boat";
 
 interface HomeProps {
@@ -16,8 +17,9 @@ const Home: React.FC<HomeProps> = ({ searchTerm, onSearchTermChange }) => {
         const result = data.boats.filter(
           (boat) =>
             boat.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            boat.year.toString().includes(searchTerm) ||
             boat.price.toString().includes(searchTerm) ||
+            boat.type.toString().includes(searchTerm) ||
+            boat.year.toString().includes(searchTerm) ||
             boat.description.toLowerCase().includes(searchTerm.toLowerCase())
         );
         setFilteredBoats(result);
@@ -29,17 +31,7 @@ const Home: React.FC<HomeProps> = ({ searchTerm, onSearchTermChange }) => {
     <div>
       <ul>
         {filteredBoats.map((boat) => (
-          <li key={boat.id}>
-            <img
-              src={boat.image}
-              alt={`Imagen del ${boat.name}`}
-              style={{ width: "100%" }}
-            />
-            <strong>{boat.name}</strong>: {boat.description}
-            <div>Type: {boat.type}</div>
-            <div>Year: {boat.year}</div>
-            <div>Price: {boat.price}</div>
-          </li>
+          <BoatCard key={boat.id} boat={boat} isFullView={true} />
         ))}
       </ul>
     </div>

@@ -63,7 +63,7 @@ const NavBar: React.FC<NavBarProps> = ({ onSearch }) => {
               className="offcanvas-title text-white"
               id="offcanvasNavbarLabel"
             >
-              Menu
+              BoatRent <b>SaltSea</b>
             </h5>
             <button
               type="button"
