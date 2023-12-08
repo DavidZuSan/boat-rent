@@ -9,6 +9,7 @@ interface HomeProps {
 
 const Home: React.FC<HomeProps> = ({ searchTerm, onSearchTermChange }) => {
   const [filteredBoats, setFilteredBoats] = useState<Boat[]>([]);
+  const [selectedBoatId, setSelectedBoatId] = useState<number | null>(null);
 
   useEffect(() => {
     fetch("/dbBoats.json")
@@ -27,11 +28,18 @@ const Home: React.FC<HomeProps> = ({ searchTerm, onSearchTermChange }) => {
       .catch((error) => console.error("Error fetching boats:", error));
   }, [searchTerm]);
 
+  const handleBoatClick = (id: number) => {
+    console.log("Boat clicked:", id);
+    setSelectedBoatId(id);
+  };
+
   return (
     <div>
       <ul>
         {filteredBoats.map((boat) => (
-          <BoatCard key={boat.id} boat={boat} isFullView={true} />
+          <li key={boat.id} onClick={() => handleBoatClick(boat.id)}>
+            <BoatCard boat={boat} isFullView={selectedBoatId === boat.id} />
+          </li>
         ))}
       </ul>
     </div>

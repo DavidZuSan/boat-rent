@@ -46,6 +46,7 @@ const NavBar: React.FC<NavBarProps> = ({ onSearch }) => {
             onChange={handleSearchChange}
             onKeyDown={handleSearchKeyDown}
             autoFocus
+            data-testid="search-bar"
           />
           <Link className="navbar-brand text-white" to="/">
             <i className="bi bi-person-circle"></i>

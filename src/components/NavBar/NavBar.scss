@@ -13,7 +13,7 @@
 
 @media (max-width: 768px) {
   .offcanvas {
-    max-width: 60%;
+    max-width: 50%;
   }
 }
 
@@ -68,7 +68,7 @@
 
 .search-bar {
   flex-grow: 0;
-  width: 70%;
+  width: auto;
   padding: 5px 5px 5px 40px;
   margin-left: 10px;
   border-radius: 10px;
