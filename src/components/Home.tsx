@@ -29,7 +29,6 @@ const Home: React.FC<HomeProps> = ({ searchTerm, onSearchTermChange }) => {
   }, [searchTerm]);
 
   const handleBoatClick = (id: number) => {
-    console.log("Boat clicked:", id);
     setSelectedBoatId(id);
   };
 

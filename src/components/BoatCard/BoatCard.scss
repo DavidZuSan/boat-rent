@@ -32,5 +32,38 @@ ul {
     p {
       margin-bottom: 4px;
     }
+
+    @mixin boat-details {
+      justify-content: space-between;
+      align-items: baseline;
+      font-weight: bold;
+      display: flex;
+    }
+
+    .boat-name-and-price {
+      @include boat-details;
+      font-size: 1.2rem;
+    }
+
+    strong {
+      font-weight: bold;
+    }
+
+    .price {
+      @include boat-details;
+
+      .price-label {
+        margin-right: 5px;
+        font-size: 0.75rem;
+      }
+
+      .price-value {
+        letter-spacing: -0.03em;
+      }
+    }
+
+    .type-and-year {
+      @include boat-details;
+    }
   }
 }

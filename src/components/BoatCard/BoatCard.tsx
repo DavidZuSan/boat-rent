@@ -12,13 +12,20 @@ const BoatCard: React.FC<BoatCardProps> = ({ boat, isFullView = false }) => {
     <div className={`boat-card ${isFullView ? "full-view" : ""}`}>
       <img src={boat.image} alt={`Imagen del ${boat.name}`} />
       <div className="boat-info">
-        <strong>{boat.name}</strong>
-        <div>Price: {boat.price}</div>
+        <div className="boat-name-and-price">
+          <strong className="boat-name">{boat.name.toUpperCase()}</strong>
+          <div className="price">
+            <span className="price-label">From</span>
+            <span className="price-value">${boat.price}</span>
+          </div>
+        </div>
         {isFullView && (
           <>
-            <p>{boat.description}</p>
-            <div>Type: {boat.type}</div>
-            <div>Year: {boat.year}</div>
+            <p className="description">{boat.description}</p>
+            <div className="type-and-year">
+              <span>Type: {boat.type}</span>
+              <span>Year: {boat.year}</span>
+            </div>
           </>
         )}
       </div>
