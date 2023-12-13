@@ -1,19 +1,25 @@
 ul {
-  padding-top: 100px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 100px 16px 16px;
+  list-style-type: none;
+  margin: 0;
 }
 
 .boat-card {
   background: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
   overflow: hidden;
-  margin: 16px;
-  transition: transform 0.2s;
+  width: 100%;
+  max-width: 400px;
+  margin: 32px;
+  transition: transform 2s;
 
   &:hover {
-    transform: translateY(-5px);
+    transform: translateY(5px);
   }
 
   img {
@@ -65,5 +71,12 @@ ul {
     .type-and-year {
       @include boat-details;
     }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .boat-card {
+    max-width: 500px;
+    margin: 32px;
   }
 }

@@ -26,6 +26,33 @@
       "price": 200,
       "image": "/images/boats/yacht_01.png",
       "description": "Aliquip dolore nulla anim ut aliquip esse nisi reprehenderit reprehenderit velit nostrud consectetur duis."
+    },
+    {
+      "id": 4,
+      "name": "Black Pearl",
+      "type": "Sailboat",
+      "year": 1823,
+      "price": 450,
+      "image": "/images/boats/yacht_03.png",
+      "description": "Aliquip dolore nulla anim ut aliquip esse nisi reprehenderit reprehenderit velit nostrud consectetur duis."
+    },
+    {
+      "id": 5,
+      "name": "The Leviathan",
+      "type": "Motor",
+      "year": 2020,
+      "price": 450,
+      "image": "/images/boats/yacht_04.png",
+      "description": "Aliquip dolore nulla anim ut aliquip esse nisi reprehenderit reprehenderit velit nostrud consectetur duis."
+    },
+    {
+      "id": 6,
+      "name": "Trinidad",
+      "type": "Sailboat",
+      "year": 2013,
+      "price": 80,
+      "image": "/images/boats/yacht_05.png",
+      "description": "Aliquip dolore nulla anim ut aliquip esse nisi reprehenderit reprehenderit velit nostrud consectetur duis."
     }
   ]
 }
