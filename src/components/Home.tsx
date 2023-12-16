@@ -19,9 +19,17 @@ const Home: React.FC<HomeProps> = ({ searchTerm, onSearchTermChange }) => {
           (boat) =>
             boat.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
             boat.price.toString().includes(searchTerm) ||
-            boat.type.toString().includes(searchTerm) ||
+            boat.type.some((type) =>
+              type.toLowerCase().includes(searchTerm.toLowerCase())
+            ) ||
             boat.year.toString().includes(searchTerm) ||
-            boat.description.toLowerCase().includes(searchTerm.toLowerCase())
+            (Array.isArray(boat.description)
+              ? boat.description.some((desc) =>
+                  desc.toLowerCase().includes(searchTerm.toLowerCase())
+                )
+              : boat.description
+                  .toLowerCase()
+                  .includes(searchTerm.toLowerCase()))
         );
         setFilteredBoats(result);
       })

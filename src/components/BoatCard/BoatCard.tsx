@@ -21,7 +21,15 @@ const BoatCard: React.FC<BoatCardProps> = ({ boat, isFullView = false }) => {
         </div>
         {isFullView && (
           <>
-            <p className="description">{boat.description}</p>
+            {Array.isArray(boat.description) ? (
+              boat.description.map((paragraph, index) => (
+                <p key={index} className="description">
+                  {paragraph}
+                </p>
+              ))
+            ) : (
+              <p className="description">{boat.description}</p>
+            )}
             <div className="type-and-year">
               <span>Type: {boat.type}</span>
               <span>Year: {boat.year}</span>

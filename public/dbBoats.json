@@ -6,8 +6,16 @@
       "type": "Sailboat",
       "year": 2013,
       "price": 130,
-      "image": "/images/boats/sailboat_01.png",
-      "description": "Aliquip dolore nulla anim ut aliquip esse nisi reprehenderit reprehenderit velit nostrud consectetur duis."
+      "image": "/images/boats/ship01/sailboat_01.png",
+      "imageInside": [
+        "images/boats/ship01/sailboat_01_inside_01",
+        "images/boats/ship01/sailboat_01_inside_02",
+        "images/boats/ship01/sailboat_01_outside"
+      ],
+      "description": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec orci pellentesque justo pulvinar porta rutrum in neque. Praesent rutrum elit neque, sit amet interdum ex lacinia id. Nam vestibulum ipsum lacus, vulputate placerat enim dignissim sit amet.",
+        "Mauris venenatis tortor a porttitor sagittis. Nulla nisi diam, fringilla et finibus eget, consequat in eros."
+      ]
     },
     {
       "id": 2,
