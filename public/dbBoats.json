@@ -3,42 +3,58 @@
     {
       "id": 1,
       "name": "Serendipity",
-      "type": "Sailboat",
+      "type": ["Sailboat", "Modern"],
       "year": 2013,
       "price": 130,
       "image": "/images/boats/ship01/sailboat_01.png",
       "imageInside": [
-        "images/boats/ship01/sailboat_01_inside_01",
-        "images/boats/ship01/sailboat_01_inside_02",
-        "images/boats/ship01/sailboat_01_outside"
+        "images/boats/ship01/sailboat_01_inside_01.png",
+        "images/boats/ship01/sailboat_01_inside_02.png",
+        "images/boats/ship01/sailboat_01_outside_01.png",
+        "images/boats/ship01/sailboat_01_outside_02.png"
       ],
       "description": [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec orci pellentesque justo pulvinar porta rutrum in neque. Praesent rutrum elit neque, sit amet interdum ex lacinia id. Nam vestibulum ipsum lacus, vulputate placerat enim dignissim sit amet.",
         "Mauris venenatis tortor a porttitor sagittis. Nulla nisi diam, fringilla et finibus eget, consequat in eros."
-      ]
+      ],
+      "speed": 15,
+      "length": 12,
+      "bedrooms": 1
     },
     {
       "id": 2,
       "name": "Liberty",
-      "type": "Motor",
+      "type": ["Motor", "Modern"],
       "year": 2013,
       "price": 80,
-      "image": "/images/boats/yacht_02.png",
-      "description": "Aliquip dolore nulla anim ut aliquip esse nisi reprehenderit reprehenderit velit nostrud consectetur duis."
+      "image": "/images/boats/ship02/yacht_01.png",
+      "imageInside": [
+        "images/boats/ship02/yacht_01_inside_01.png",
+        "images/boats/ship02/yacht_01_inside_02.png",
+        "images/boats/ship02/sailboat_01_outside_01.png",
+        "images/boats/ship02/sailboat_01_outside_02.png"
+      ],
+      "description": [
+        "Aliquip dolore nulla anim ut aliquip esse nisi reprehenderit reprehenderit velit nostrud consectetur duis.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam, metus a gravida auctor. Sed aliquam quam quam, quis semper eros facilisis quis. Maecenas nisl turpis, auctor quis libero ut, rhoncus tempor ante."
+      ],
+      "speed": 35,
+      "length": 23,
+      "bedrooms": 3
     },
     {
       "id": 3,
       "name": "Amazonite",
-      "type": "Motor",
+      "type": ["Motor", "Modern"],
       "year": 2020,
       "price": 200,
-      "image": "/images/boats/yacht_01.png",
+      "image": "/images/boats/ship03/yacht_02.png",
       "description": "Aliquip dolore nulla anim ut aliquip esse nisi reprehenderit reprehenderit velit nostrud consectetur duis."
     },
     {
       "id": 4,
       "name": "Black Pearl",
-      "type": "Sailboat",
+      "type": ["Sailboat", "Classic"],
       "year": 1823,
       "price": 450,
       "image": "/images/boats/yacht_03.png",
@@ -47,7 +63,7 @@
     {
       "id": 5,
       "name": "The Leviathan",
-      "type": "Motor",
+      "type": ["Motor", "Modern"],
       "year": 2020,
       "price": 450,
       "image": "/images/boats/yacht_04.png",
@@ -56,7 +72,7 @@
     {
       "id": 6,
       "name": "Trinidad",
-      "type": "Sailboat",
+      "type": ["Sailboat", "Classic"],
       "year": 2013,
       "price": 80,
       "image": "/images/boats/yacht_05.png",

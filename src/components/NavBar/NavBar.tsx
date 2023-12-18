@@ -20,6 +20,7 @@ const NavBar: React.FC<NavBarProps> = ({ onSearch }) => {
   ) => {
     if (event.key === "Enter") {
       onSearch(searchTerm);
+      setSearchTerm("");
     }
   };
 

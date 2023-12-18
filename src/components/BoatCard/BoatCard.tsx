@@ -6,7 +6,6 @@ interface BoatCardProps {
   boat: Boat;
   isFullView?: boolean;
 }
-
 const BoatCard: React.FC<BoatCardProps> = ({ boat, isFullView = false }) => {
   return (
     <div className={`boat-card ${isFullView ? "full-view" : ""}`}>
@@ -21,18 +20,41 @@ const BoatCard: React.FC<BoatCardProps> = ({ boat, isFullView = false }) => {
         </div>
         {isFullView && (
           <>
-            {Array.isArray(boat.description) ? (
-              boat.description.map((paragraph, index) => (
-                <p key={index} className="description">
-                  {paragraph}
-                </p>
-              ))
-            ) : (
-              <p className="description">{boat.description}</p>
+            {boat.imageInside && boat.imageInside.length > 0 && (
+              <div className="boat-images-inside">
+                {boat.imageInside.map((imagePath, index) => (
+                  <img
+                    key={index}
+                    src={imagePath}
+                    alt={`Interior ${index + 1} del ${boat.name}`}
+                  />
+                ))}
+              </div>
             )}
-            <div className="type-and-year">
-              <span>Type: {boat.type}</span>
-              <span>Year: {boat.year}</span>
+            <div className="boat-description">
+              {Array.isArray(boat.description) ? (
+                boat.description.map((paragraph, index) => (
+                  <p key={index} className="description">
+                    {paragraph}
+                  </p>
+                ))
+              ) : (
+                <p className="description">{boat.description}</p>
+              )}
+            </div>
+            <div className="boat-features">
+              <div className="feature-item">
+                <i className="bi bi-speedometer" />
+                <span className="feature-text"> {boat.speed} km/h</span>
+              </div>
+              <div className="feature-item">
+                <i className="bi bi-arrows" />
+                <span className="feature-text"> Length {boat.length}m</span>
+              </div>
+              <div className="feature-item">
+                <i className="bi bi-suitcase" />
+                <span className="feature-text"> {boat.bedrooms} bedrooms</span>
+              </div>
             </div>
           </>
         )}
