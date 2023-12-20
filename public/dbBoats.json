@@ -48,8 +48,17 @@
       "type": ["Motor", "Modern"],
       "year": 2020,
       "price": 200,
+      "imageInside": [
+        "images/boats/ship03/yacht_02_inside_01.png",
+        "images/boats/ship03/yacht_02_inside_02.png",
+        "images/boats/ship03/yacht_02_inside_03.png",
+        "images/boats/ship03/yacht_02_outside_01.png"
+      ],
       "image": "/images/boats/ship03/yacht_02.png",
-      "description": "Aliquip dolore nulla anim ut aliquip esse nisi reprehenderit reprehenderit velit nostrud consectetur duis."
+      "description": "Aliquip dolore nulla anim ut aliquip esse nisi reprehenderit reprehenderit velit nostrud consectetur duis.",
+      "speed": 40,
+      "length": 30,
+      "bedrooms": 3
     },
     {
       "id": 4,
@@ -57,8 +66,17 @@
       "type": ["Sailboat", "Classic"],
       "year": 1823,
       "price": 450,
-      "image": "/images/boats/yacht_03.png",
-      "description": "Aliquip dolore nulla anim ut aliquip esse nisi reprehenderit reprehenderit velit nostrud consectetur duis."
+      "imageInside": [
+        "images/boats/ship04/sailboat_02_inside_01.png",
+        "images/boats/ship04/sailboat_02_inside_02.png",
+        "images/boats/ship04/sailboat_02_inside_03.png",
+        "images/boats/ship04/sailboat_02_outside_01.png"
+      ],
+      "image": "/images/boats/ship04/sailboat_02.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam, metus a gravida auctor. Sed aliquam quam quam, quis semper eros facilisis quis. Maecenas nisl turpis, auctor quis libero ut, rhoncus tempor ante.",
+      "speed": 10,
+      "length": 60,
+      "bedrooms": 20
     },
     {
       "id": 5,
@@ -67,7 +85,10 @@
       "year": 2020,
       "price": 450,
       "image": "/images/boats/yacht_04.png",
-      "description": "Aliquip dolore nulla anim ut aliquip esse nisi reprehenderit reprehenderit velit nostrud consectetur duis."
+      "description": "Aliquip dolore nulla anim ut aliquip esse nisi reprehenderit reprehenderit velit nostrud consectetur duis.",
+      "speed": 25,
+      "length": 35,
+      "bedrooms": 5
     },
     {
       "id": 6,
@@ -76,7 +97,10 @@
       "year": 2013,
       "price": 80,
       "image": "/images/boats/yacht_05.png",
-      "description": "Aliquip dolore nulla anim ut aliquip esse nisi reprehenderit reprehenderit velit nostrud consectetur duis."
+      "description": "Aliquip dolore nulla anim ut aliquip esse nisi reprehenderit reprehenderit velit nostrud consectetur duis.",
+      "speed": 10,
+      "length": 40,
+      "bedrooms": 10
     }
   ]
 }

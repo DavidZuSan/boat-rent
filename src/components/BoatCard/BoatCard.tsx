@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Boat } from "../types/Boat";
 import "./BoatCard.scss";
 
@@ -7,8 +7,22 @@ interface BoatCardProps {
   isFullView?: boolean;
 }
 const BoatCard: React.FC<BoatCardProps> = ({ boat, isFullView = false }) => {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+  const handleImageClick = (imagePath: string) => {
+    setSelectedImage(imagePath);
+  };
+
+  const handleCloseImage = () => {
+    setSelectedImage(null);
+  };
+
   return (
-    <div className={`boat-card ${isFullView ? "full-view" : ""}`}>
+    <div
+      className={`boat-card ${isFullView ? "full-view" : ""} ${
+        selectedImage ? "image-selected" : ""
+      }`}
+    >
       <img src={boat.image} alt={`Imagen del ${boat.name}`} />
       <div className="boat-info">
         <div className="boat-name-and-price">
@@ -27,6 +41,7 @@ const BoatCard: React.FC<BoatCardProps> = ({ boat, isFullView = false }) => {
                     key={index}
                     src={imagePath}
                     alt={`Interior ${index + 1} del ${boat.name}`}
+                    onClick={() => handleImageClick(imagePath)}
                   />
                 ))}
               </div>
@@ -56,6 +71,18 @@ const BoatCard: React.FC<BoatCardProps> = ({ boat, isFullView = false }) => {
                 <span className="feature-text"> {boat.bedrooms} bedrooms</span>
               </div>
             </div>
+            {selectedImage && (
+              <div className="image-popup">
+                <img
+                  src={selectedImage}
+                  alt="Ampliada"
+                  onClick={handleCloseImage}
+                />
+                <button className="close-button" onClick={handleCloseImage}>
+                  X
+                </button>
+              </div>
+            )}
           </>
         )}
       </div>
