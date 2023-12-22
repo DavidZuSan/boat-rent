@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
-import BoatDetails from "./components/BoatDetails";
 import NavBar from "./components/NavBar/NavBar";
 
 import "./styles/global.scss";
@@ -24,7 +23,6 @@ const App: React.FC = () => {
             <Home searchTerm={searchTerm} onSearchTermChange={handleSearch} />
           }
         />
-        <Route path="/boat/:id" element={<BoatDetails />} />
       </Routes>
     </Router>
   );

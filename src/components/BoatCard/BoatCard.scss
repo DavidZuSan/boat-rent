@@ -153,15 +153,3 @@ ul {
     opacity: 1;
   }
 }
-
-@media (max-width: 768px) {
-  .boat-card {
-    max-width: 500px;
-    margin: 32px;
-  }
-
-  .image-popup img {
-    max-width: 90vw;
-    max-height: 90vh;
-  }
-}
