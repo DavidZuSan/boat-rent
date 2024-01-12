@@ -88,7 +88,7 @@
 
 .search-bar {
   flex-grow: 0;
-  width: auto;
+  width: calc(100% - 30px);
   padding: 5px;
   margin-left: 10px;
   border-radius: 10px;
@@ -109,11 +109,12 @@
 .navbar-toggler i.fas,
 .navbar-brand i.bi {
   color: azure;
+  font-size: 30px;
 }
 
 .navbar-toggler i.fas {
-  font-size: 38px;
-  padding-right: 15px;
+  font-size: 30px;
+  padding-right: 0;
 }
 
 /* Estilos para el botón de cierre personalizado */
@@ -145,4 +146,27 @@
 /* Estilos para la barra de navegación en dispositivos de mayor tamaño */
 .navbar > .container-fluid {
   flex-wrap: initial;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav-item {
+    @media (max-width: 768px) {
+      width: 1;
+    }
+  }
+}
+
+/* Estilos para pantallas grandes (escritorio) */
+@media (min-width: 992px) {
+  ul {
+    padding: 60px 16px 16px;
+  }
+
+  .boat-card {
+    width: calc(100% - 64px);
+    margin: 32px;
+  }
 }
