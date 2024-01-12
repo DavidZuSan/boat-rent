@@ -1,9 +1,10 @@
+/* Estilos para la barra de navegación */
+
 .bg-body-tertiary {
   background-color: transparent !important;
 }
 
 .offcanvas {
-  max-width: 50%;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   backdrop-filter: blur(10px);
@@ -15,39 +16,96 @@
   .offcanvas {
     max-width: 50%;
   }
+
+  .offcanvas-body {
+    width: 250px;
+    padding-left: 40px;
+  }
 }
 
-.offcanvas-body {
-  width: 250px;
-  padding-left: 40px;
-}
-
+/* Estilos para la marca de la barra de navegación */
 .navbar-brand {
   margin-left: 15px;
   display: flex;
   align-items: center;
-  order: 3;
   i.bi {
     font-size: 38px;
     color: azure;
   }
 }
 
+/* Estilos para la navegación */
 .navbar-nav {
   padding-top: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 0;
   width: auto;
-  max-width: 50%;
-  padding-left: 0;
 }
 
-.nav-item {
-  width: 100%;
+@media (min-width: 769px) {
+  .navbar-nav {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .nav-item {
+    display: inline-block;
+    width: auto;
+    padding: 0 10px;
+  }
+
+  .search-container {
+    justify-content: center;
+    position: relative;
+    padding-left: 40px; // Espacio para el icono de la lupa
+  }
+
+  .search-icon {
+    position: absolute;
+    left: 0; // Alineación a la izquierda dentro de .search-container
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+
+  .search-bar {
+    padding-left: 2.5rem; // Espacio para el icono de la lupa
+    width: 100%;
+  }
 }
 
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  flex-grow: 1;
+  padding-left: 0; // Eliminar el padding izquierdo en móviles para el icono de la lupa
+}
+
+.search-bar {
+  flex-grow: 0;
+  width: auto;
+  padding: 5px;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background-color: azure;
+  padding-left: 40px; // Añadir padding para el icono de la lupa en móviles
+}
+
+.search-icon {
+  position: absolute;
+  left: 20px; // Ajustar para alinear con el padding de .search-bar en móviles
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+/* Estilos para los iconos de la barra de navegación */
 .navbar-toggler i.fas,
 .navbar-brand i.bi {
   color: azure;
@@ -58,18 +116,19 @@
   padding-right: 15px;
 }
 
+/* Estilos para el botón de cierre personalizado */
 .btn-close-custom {
   background: none;
   border: none;
   outline: none;
   color: azure;
   font-size: 34px;
-
   &:focus {
     box-shadow: none;
   }
 }
 
+/* Estilos para el menú desplegable */
 .dropdown-menu {
   position: absolute;
   left: 0;
@@ -83,33 +142,7 @@
   color: #000;
 }
 
-.search-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-  flex-grow: 1;
-}
-
-.search-bar {
-  flex-grow: 0;
-  width: auto;
-  padding: 5px 5px 5px 100px;
-  margin-left: 10px;
-  border-radius: 10px;
-  border: 1px solid #ddd;
-  background-color: azure;
-}
-
-.search-icon {
-  position: absolute;
-  left: 22px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #000;
-  z-index: 10;
-}
-
+/* Estilos para la barra de navegación en dispositivos de mayor tamaño */
 .navbar > .container-fluid {
   flex-wrap: initial;
 }

@@ -25,7 +25,7 @@ const NavBar: React.FC<NavBarProps> = ({ onSearch }) => {
   };
 
   return (
-    <nav className="navbar bg-body-tertiary fixed-top">
+    <nav className="navbar navbar-expand-md bg-body-tertiary fixed-top">
       <div className="container-fluid">
         <button
           className="navbar-toggler"
@@ -37,22 +37,9 @@ const NavBar: React.FC<NavBarProps> = ({ onSearch }) => {
           <i className="fas fa-bars"></i>
         </button>
 
-        <div className="search-container ms-auto">
-          <i className="bi bi-search search-icon"></i>
-          <input
-            type="text"
-            className="search-bar"
-            placeholder="Search..."
-            value={searchTerm}
-            onChange={handleSearchChange}
-            onKeyDown={handleSearchKeyDown}
-            autoFocus
-            data-testid="search-bar"
-          />
-          <Link className="navbar-brand text-white" to="/">
-            <i className="bi bi-person-circle"></i>
-          </Link>
-        </div>
+        <Link className="navbar-brand text-white" to="/">
+          <i className="bi bi-person-circle"></i>
+        </Link>
 
         <div
           className="offcanvas offcanvas-start"
@@ -89,10 +76,10 @@ const NavBar: React.FC<NavBarProps> = ({ onSearch }) => {
               <DropdownItem
                 title="Seaports"
                 items={[
-                  { name: "Málaga", path: "/boats/type/malaga" },
-                  { name: "Benalmádane", path: "/boats/type/benalmadena" },
-                  { name: "Marbella", path: "/boats/type/marbella" },
-                  { name: "Puerto Banús", path: "/boats/type/puertobanus" },
+                  { name: "Málaga", path: "/seaports/malaga" },
+                  { name: "Benalmádena", path: "/seaports/benalmadena" },
+                  { name: "Marbella", path: "/seaports/marbella" },
+                  { name: "Puerto Banús", path: "/seaports/puertobanus" },
                 ]}
               />
               <li className="nav-item">
@@ -107,6 +94,20 @@ const NavBar: React.FC<NavBarProps> = ({ onSearch }) => {
               </li>
             </ul>
           </div>
+        </div>
+
+        <div className="search-container ms-auto">
+          <i className="bi bi-search search-icon"></i>
+          <input
+            type="text"
+            className="search-bar"
+            placeholder="Search..."
+            value={searchTerm}
+            onChange={handleSearchChange}
+            onKeyDown={handleSearchKeyDown}
+            autoFocus
+            data-testid="search-bar"
+          />
         </div>
       </div>
     </nav>

@@ -60,7 +60,7 @@ const BoatCard: React.FC<BoatCardProps> = ({ boat, isFullView = false }) => {
             <div className="boat-features">
               <div className="feature-item">
                 <i className="bi bi-speedometer" />
-                <span className="feature-text"> {boat.speed} km/h</span>
+                <span className="feature-text"> {boat.speed} knots</span>
               </div>
               <div className="feature-item">
                 <i className="bi bi-arrows" />
