@@ -6,12 +6,12 @@
       "type": ["Sailboat", "Modern"],
       "year": 2013,
       "price": 130,
-      "image": "/images/boats/ship01/sailboat_01.png",
+      "image": "/images/boats/ship01/sailboat_01.webp",
       "imageInside": [
-        "images/boats/ship01/sailboat_01_inside_01.png",
-        "images/boats/ship01/sailboat_01_inside_02.png",
-        "images/boats/ship01/sailboat_01_outside_01.png",
-        "images/boats/ship01/sailboat_01_outside_02.png"
+        "images/boats/ship01/sailboat_01_inside_01.webp",
+        "images/boats/ship01/sailboat_01_inside_02.webp",
+        "images/boats/ship01/sailboat_01_outside_01.webp",
+        "images/boats/ship01/sailboat_01_outside_02.webp"
       ],
       "description": [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec orci pellentesque justo pulvinar porta rutrum in neque. Praesent rutrum elit neque, sit amet interdum ex lacinia id. Nam vestibulum ipsum lacus, vulputate placerat enim dignissim sit amet.",
@@ -27,12 +27,12 @@
       "type": ["Motor", "Modern"],
       "year": 2013,
       "price": 80,
-      "image": "/images/boats/ship02/yacht_01.png",
+      "image": "/images/boats/ship02/yacht_01.webp",
       "imageInside": [
-        "images/boats/ship02/yacht_01_inside_01.png",
-        "images/boats/ship02/yacht_01_inside_02.png",
-        "images/boats/ship02/sailboat_01_outside_01.png",
-        "images/boats/ship02/sailboat_01_outside_02.png"
+        "images/boats/ship02/yacht_01_inside_01.webp",
+        "images/boats/ship02/yacht_01_inside_02.webp",
+        "images/boats/ship02/sailboat_01_outside_01.webp",
+        "images/boats/ship02/sailboat_01_outside_02.webp"
       ],
       "description": [
         "Aliquip dolore nulla anim ut aliquip esse nisi reprehenderit reprehenderit velit nostrud consectetur duis.",
@@ -49,12 +49,12 @@
       "year": 2020,
       "price": 200,
       "imageInside": [
-        "images/boats/ship03/yacht_02_inside_01.png",
-        "images/boats/ship03/yacht_02_inside_02.png",
-        "images/boats/ship03/yacht_02_inside_03.png",
-        "images/boats/ship03/yacht_02_outside_01.png"
+        "images/boats/ship03/yacht_02_inside_01.webp",
+        "images/boats/ship03/yacht_02_inside_02.webp",
+        "images/boats/ship03/yacht_02_inside_03.webp",
+        "images/boats/ship03/yacht_02_outside_01.webp"
       ],
-      "image": "/images/boats/ship03/yacht_02.png",
+      "image": "/images/boats/ship03/yacht_02.webp",
       "description": "Aliquip dolore nulla anim ut aliquip esse nisi reprehenderit reprehenderit velit nostrud consectetur duis.",
       "speed": 40,
       "length": 30,
@@ -67,12 +67,12 @@
       "year": 1823,
       "price": 450,
       "imageInside": [
-        "images/boats/ship04/sailboat_02_inside_01.png",
-        "images/boats/ship04/sailboat_02_inside_02.png",
-        "images/boats/ship04/sailboat_02_inside_03.png",
-        "images/boats/ship04/sailboat_02_outside_01.png"
+        "images/boats/ship04/sailboat_02_inside_01.webp",
+        "images/boats/ship04/sailboat_02_inside_02.webp",
+        "images/boats/ship04/sailboat_02_inside_03.webp",
+        "images/boats/ship04/sailboat_02_outside_01.webp"
       ],
-      "image": "/images/boats/ship04/sailboat_02.png",
+      "image": "/images/boats/ship04/sailboat_02.webp",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam, metus a gravida auctor. Sed aliquam quam quam, quis semper eros facilisis quis. Maecenas nisl turpis, auctor quis libero ut, rhoncus tempor ante.",
       "speed": 10,
       "length": 60,
@@ -84,7 +84,7 @@
       "type": ["Motor", "Modern"],
       "year": 2020,
       "price": 450,
-      "image": "/images/boats/yacht_04.png",
+      "image": "/images/boats/yacht_04.webp",
       "description": "Aliquip dolore nulla anim ut aliquip esse nisi reprehenderit reprehenderit velit nostrud consectetur duis.",
       "speed": 25,
       "length": 35,
@@ -96,7 +96,7 @@
       "type": ["Sailboat", "Classic"],
       "year": 2013,
       "price": 80,
-      "image": "/images/boats/yacht_05.png",
+      "image": "/images/boats/yacht_05.webp",
       "description": "Aliquip dolore nulla anim ut aliquip esse nisi reprehenderit reprehenderit velit nostrud consectetur duis.",
       "speed": 10,
       "length": 40,
